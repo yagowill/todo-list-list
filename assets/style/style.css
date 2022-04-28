@@ -1,86 +1,27 @@
-:root{
-    --dark: rgb(40, 39, 56);
-    --darker: rgb(21, 20, 29);
-    --light: rgb(182, 182, 182);
-    --pink: rgb(240, 24, 255);
-    --azul: rgb(0, 187, 255);
-}
-
 *{
-    margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
-body{
-    background-color: var(--dark);
-    color: var(--light);
+main{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
     display: flex;
     flex-direction: column;
-    width: 450px;
     align-items: center;
-    margin: auto;
 }
 
-#tinput{
-    background-color: var(--darker);
-    color: var(--light);
-    border-style: none;
-    border-radius: 5px;
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.382) inset;
-    width: 330px;
-    height: 30px;
-    text-align: center;
+.titulo{
+    margin-top: 20px;
 }
 
-#tsubmit{
-    border: 1px solid rgba(117, 117, 117, 0.261);
-    background-image: linear-gradient(to right, var(--pink), var(--azul));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-radius: 10px;
-    width: 80px;
-    height: 30px;
-    cursor: pointer;
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.382) inset;
-    font-weight: bold;
-
-}
-#tsubmit:hover{
-    opacity: .8;
+.container form{
+    margin-top: 10px;
 }
 
-#tsubmit:active{
-    opacity: .6;
-}
-
-.checked{
-    text-decoration: line-through;
-}
-.lista-tarefas{
-    width: 400px;
-    margin: auto;
-}
-
-.lista-tarefas h2{
-    margin: 15px 0;
-}
-
-.texto{
-    border: none;
-    border-radius: 3px;
-    width: 200px;
-    height: 20px;
-    font-size: 14px;
-    background-color: var(--darker);
-    color: var(--light);
-    margin-left: 5px;
-    padding-left: 4px;
-}
-.texto:focus-visible{
-    outline: none;
+.container .input-tarefa{
+    padding: 0px;
+    border-radius: 20px;
 }
