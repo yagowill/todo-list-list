@@ -1,3 +1,6 @@
+:root{
+    --azulclaro: rgb(0, 183, 255);
+}
 *{
     padding: 0;
     margin: 0;
@@ -21,7 +24,39 @@ main{
     margin-top: 10px;
 }
 
-.container .input-tarefa{
-    padding: 0px;
-    border-radius: 20px;
+.container #input-tarefa{
+    padding-left: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 28px;
+    width: 210px;
+}
+
+.btn{
+    background-color: transparent;
+    color: var(--azulclaro);
+    border: 1px solid var(--azulclaro);
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+}
+#tarefas{
+    margin-top: 10px;
+    width: 300px;
+}
+
+.tarefa-item{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+.tarefa-item label{
+    padding-left: 5px;
+}
+
+:checked + label{
+    text-decoration: line-through;
+    color: grey;
+
 }
